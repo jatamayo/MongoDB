@@ -1,0 +1,86 @@
+/______________________   ALUMNOS  ____________________________/
+db.createCollection("students")
+
+db.students.insert({
+    "id": "1",
+    "name": "karem beatriz",
+    "lastName": "tamayo",
+    "gender": "F",
+    "birthDay": "April"
+})
+db.students.insert({
+    "id": "2",
+    "name": "Soraida ",
+    "lastName": "Lopez",
+    "gender": "F",
+    "birthDay": "November"
+})
+db.students.insert({
+    "id": "3",
+    "name": "oto daniel",
+    "lastName": "tamayo",
+    "gender": "M",
+    "birthDay": "February"
+})
+db.students.insert({
+    "id": "4",
+    "name": "jose alejandro",
+    "lastName": "tamayo",
+    "gender": "M",
+    "birthDay": "February"
+})
+db.students.insert({
+    "id": "5",
+    "name": "andrea michelle",
+    "lastName": "mendez",
+    "gender": "F",
+    "birthDay": "February"
+})
+
+db.students.find().pretty()
+/______________________   PROFESOR  ____________________________/
+db.createCollection("teachers")
+
+db.teachers.insert({
+    "id": "1",
+    "name": "profesor 1",
+    "lastName": "apellido 1",
+    "gender": "F",
+})
+db.teachers.insert({
+    "id": "2",
+    "name": "profesor 2",
+    "lastName": "apellido 2",
+    "gender": "F",
+})
+db.teachers.insert({
+    "id": "3",
+    "name": "profesor 3",
+    "lastName": "apellido 3",
+    "gender": "F",
+})
+
+db.teachers.find().pretty()
+
+/______________________   GRADO  ____________________________/
+db.createCollection("degrees")
+
+db.degrees.insert({
+    "id": "1",
+    "name": "grado 1",
+    "teacherID": "1",
+})
+db.degrees.insert({
+    "id": "2",
+    "name": "grado 2",
+    "teacherID": "2",
+})
+db.degrees.insert({
+    "id": "3",
+    "name": "grado 3",
+    "teacherID": "3",
+})
+
+
+db.degrees.find().pretty()
+

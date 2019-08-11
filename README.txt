@@ -62,3 +62,9 @@ db.usuarios.deleteOne({
 /_______________________  consultas valores una coleccion testing _____________________/
 db.usuarios.find().pretty()
 db.usuarios.findOne().pretty()
+
+db.usuarios.find({
+    "gender": "M"
+}).pretty()
+
+
